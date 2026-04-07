@@ -32,7 +32,7 @@ Terraform project to provision an AWS EC2 workstation pre-configured with DevOps
    ```
    Provide your Access Key ID, Secret Access Key, default region (`us-east-1`), and output format (`json`)
 
-4. **eksctl** — install on Windows so you can manage the EKS cluster locally
+4. **eksctl** — install on Windows so you can manage the EKS cluster locally. Run cmd as administrator and run the command
    ```powershell
    choco install eksctl
    ```
