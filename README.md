@@ -1,6 +1,6 @@
 # terraform-aws-workstation
 
-Terraform project to provision an AWS EC2 workstation pre-configured with DevOps tooling (Docker, eksctl, kubectl, kubens, AWS CLI) and automatically creates an EKS cluster on startup.
+Terraform project to provision an AWS EC2 workstation pre-configured with DevOps tooling (Docker, eksctl, kubectl, kubens, k9s, AWS CLI) and automatically creates an EKS cluster on startup.
 
 ---
 
@@ -13,8 +13,10 @@ Terraform project to provision an AWS EC2 workstation pre-configured with DevOps
   - eksctl
   - kubectl
   - kubens
+  - k9s
   - AWS CLI (configured for `ec2-user`)
 - Clones the `daws-88s/eksctl` repo and creates an EKS cluster using `eks.yaml`
+- Authenticates kubectl against the cluster automatically (`aws eks update-kubeconfig`)
 - On `terraform destroy`, automatically deletes the EKS cluster via a remote-exec provisioner
 
 ---
