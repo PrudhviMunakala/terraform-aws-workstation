@@ -1,3 +1,4 @@
+# Prudhvi's configuration
 resource "aws_instance" "workstation" {
   ami           = local.ami_id
   instance_type = "t3.micro"
